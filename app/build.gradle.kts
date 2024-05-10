@@ -45,4 +45,9 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    implementation(libs.androidx.room.runtime)  // Using alias for androidx-room-runtime
+    annotationProcessor(libs.androidx.room.compiler)
+
+
 }

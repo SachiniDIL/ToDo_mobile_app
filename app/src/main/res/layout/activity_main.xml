@@ -5,15 +5,23 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/backgroundimg"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/todo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:fontFamily="@font/alatsi"
+        android:text="@string/todo"
+        android:textColor="#FDFDFD"
+        android:textSize="60sp"
+        android:shadowColor="#114232"
+        android:shadowDx="10"
+        android:shadowDy="10"
+        android:shadowRadius="2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
