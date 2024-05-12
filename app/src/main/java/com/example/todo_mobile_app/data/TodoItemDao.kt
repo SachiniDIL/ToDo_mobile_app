@@ -25,6 +25,7 @@ interface TodoItemDao {
     @Query("SELECT * FROM todoitem WHERE todoID = :id")
     suspend fun getTodoItemById(id: Long): TodoItem?
 
-    @Query("SELECT * FROM todoitem WHERE date = :date")
-    suspend fun getTodoItemsForToday(date: Date): List<TodoItem>
+    @Query("SELECT * FROM todoitem WHERE date = :timestamp")
+    suspend fun getTodoItemsForToday(timestamp: Long): List<TodoItem>
+
 }
